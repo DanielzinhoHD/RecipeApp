@@ -1,0 +1,44 @@
+--- v1
+
+    -Make Navbar's Search button work;
+    -Display results from search input in search.php;
+    -Make ... appear when text overflows div;
+    -Turn first letter captal in recipe.php ingredients;
+    -Increase overflow-x scroll size on results page;
+    -Make when favs img clicked the user will be redirected to its recipe;
+    -Make filter favorites input work on favorites page using AJAX interacting with DB;
+    -Display each favorite through AJAX and not PHP anymore;
+    -Make favorites removable by clicking on their own stars;
+    -Add fav stars in search icons;
+    -Remove input storing food id in recipe.php, and make it store in the button and use AJAX;
+    -Stylize search icons;
+    -Fix fav stars appearing all transparent in search.php;
+    -Use AJAX to verify email creating and NOT reload the page;
+    -Send user email to verify account;
+    -Add ~results for "food"~ in search.php;
+    -Add sql injection protection in the vkey get, inside verify.inc.php;
+    -Remove white bg when selecting pre-input;
+    -Try to align bg pic;
+    -Try to align arrow scrolls ending;
+    -Fix cut stars in search.php;
+    -Change website icon;
+    -Change every tab title;
+    -Decide if using ingredients imgs is necessary;
+        -Display search asyncs in order (maybe turning it into sync);
+        -Block signup button when clicked and work;
+        -Display only 20 icons at once, after reaching limit of the div with scroll, show more;
+
+
+
+--- v2
+
+-Allow users to upload their own profile picture;
+-Allow users to send their score to each recipe;
+-Show recipe's score on their own pages;
+-Create comment section for each recipe (with name, comment and score);
+-Create button to show more comments;
+-Create user page where they can:
+    -Change pfp;
+    -Change own name;
+    -Change password;
+-Make user verify email to create password;
