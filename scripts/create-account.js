@@ -1,7 +1,7 @@
 $(".form-signup").submit((event) => {
     event.preventDefault();
-    $('input[name="signup"]').css('cursor', 'wait');
-    $('html').css('cursor', 'wait');
+    // $('input[name="signup"]').css('cursor', 'wait');
+    // $('html').css('cursor', 'wait');
     
     const name = $('input[name="r-name"]').val();
     const email = $('input[name="r-email"]').val();

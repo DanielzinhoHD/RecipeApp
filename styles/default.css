@@ -228,7 +228,8 @@ footer ul li a{
 }
 
 .error{
-    color: rgb(199, 42, 42);
+    color: rgb(255, 49, 49);
+    text-shadow: 0px 0px 3px black;
 
     height: fit-content;
 

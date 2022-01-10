@@ -1,4 +1,6 @@
-
+<?php 
+    include '../defaults/header.php';
+?>
 <link rel="stylesheet" href="../styles/successful.css">
 <title>Account verified!</title>
 
