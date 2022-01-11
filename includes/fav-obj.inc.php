@@ -1,10 +1,11 @@
 <?php
 session_start();
 
-include 'dbh.inc.php';
 
 if(isset($_SESSION['id'])){
 // User logged in;
+    include 'dbh.inc.php';
+
     $sql = "SELECT * FROM favorites WHERE idAccounts = " . $_SESSION['id'];
     $result = mysqli_query($conn, $sql);
     
