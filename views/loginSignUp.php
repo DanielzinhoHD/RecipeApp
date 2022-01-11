@@ -4,8 +4,8 @@
     };
 
     include '../defaults/header.php';
-    echo '<link rel="stylesheet" href="../styles/login-signup.css">';
 ?>
+<link rel="stylesheet" href="../styles/login-signup.css">
 <title>Joining RecipeApp</title>
 
 <body>
