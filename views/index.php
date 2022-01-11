@@ -16,7 +16,7 @@
                     <div class="first-text">
                         Create your own <span class="red">account</span> now and add recipes into your <span class="purple">favorites</span>!
                     </div>
-                    <button type="button" class="first-btn" onclick="location.href='../views/loginSignUp.php?signup'">Enter</button>
+                    <button type="button" class="first-btn" onclick="location.href='/loginSignUp.php?signup'">Enter</button>
                     
                 </div>
                 <a class="first-arrow" href="#second-img"><i class="fas fa-chevron-down"></i></a>

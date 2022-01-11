@@ -6,7 +6,7 @@ search.addEventListener("click", () => {
     const searchDiv = document.createElement("div");
     
     const searchBar = `
-        <form action="../views/search.php" method="GET">
+        <form action="/search.php" method="GET">
             <input name="search" type="text" placeholder="Search">
         </form>
     `;

@@ -5,7 +5,7 @@ $search;
 if(isset($_GET["search"])){
     $search = $_GET["search"];
 }else{
-    header("location: ../views/index.php");
+    header("location: /index.php");
 }
 
 $jsonName = file_get_contents("https://www.themealdb.com/api/json/v1/1/search.php?s=$search");

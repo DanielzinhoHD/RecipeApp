@@ -20,7 +20,7 @@
                     <h2>Search for recipes</h2>
 
                     <div class="search-form">
-                        <form action="../views/search.php" method="GET">
+                        <form action="/search.php" method="GET">
                             <input class="search" name="search" type="text" placeholder="Search">
                         </form>
                     </div>

@@ -5,10 +5,10 @@
 <header>
     <ul>
         <li>
-            <a href="../views/index.php"><i class="fas fa-pizza-slice"></i></a>
+            <a href="/index.php"><i class="fas fa-pizza-slice"></i></a>
         </li>
         <li>
-            <a href="../views/index.php">Home</a>
+            <a href="/index.php">Home</a>
         </li>
         <li>
             <a>Contact</a>
