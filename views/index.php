@@ -1,5 +1,5 @@
-<?php include './defaults/header.php';?>
-<link rel="stylesheet" href="./styles/index.css">
+<?php include '../defaults/header.php';?>
+<link rel="stylesheet" href="../styles/index.css">
 <title>Home</title>
 
 <body>
