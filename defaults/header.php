@@ -10,6 +10,6 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
     crossorigin="anonymous">
     </script> 
-    <link rel="stylesheet" href="~/styles/default.css">
-    <link rel="icon" href="~/imgs/icon.png">
+    <link rel="stylesheet" href="../styles/default.css">
+    <link rel="icon" href="../imgs/icon.png">
 </head>

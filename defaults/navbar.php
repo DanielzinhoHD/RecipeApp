@@ -5,10 +5,10 @@
 <header>
     <ul>
         <li>
-            <a href="/index.php"><i class="fas fa-pizza-slice"></i></a>
+            <a href="../index.php"><i class="fas fa-pizza-slice"></i></a>
         </li>
         <li>
-            <a href="/index.php">Home</a>
+            <a href="../index.php">Home</a>
         </li>
         <li>
             <a>Contact</a>
@@ -31,17 +31,17 @@
             echo '<li>
                     <a>' . $_SESSION['name'] . '</a>
                     <div class="dropdown">
-                        <a href="/favlist.php">Favorites List</a>
+                        <a href="../favlist.php">Favorites List</a>
                         
                         <a href="../includes/logout.inc.php">Logout</a>
                     </div>
                 </li>';
         }else{
             echo '<li>
-                    <a href="/loginSignUp.php">Login</a>
+                    <a href="../loginSignUp.php">Login</a>
                 </li>';
             echo '<li>
-                    <a href="/loginSignUp.php?signup">Sign Up</a>
+                    <a href="../loginSignUp.php?signup">Sign Up</a>
                 </li>';
         }
     ?>
