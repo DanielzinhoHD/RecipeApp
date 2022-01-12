@@ -10,7 +10,7 @@ if(isset($_GET['vkey'])){
     
     $stmt = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt, $sql)){
-        header("location: ../views/loginSignUp.php?signup");
+        header("location: ../loginSignUp.php?signup");
         exit();
     }else{
 
@@ -27,16 +27,16 @@ if(isset($_GET['vkey'])){
             $update = mysqli_query($conn, "UPDATE accounts SET verified = 1 WHERE vkey = '$vkey' LIMIT 1");
     
             if($update){
-                header("location: ../views/verification-successful.php");
+                header("location: ../verification-successful.php");
             }else{
-                header("location: ../views/index.php");
+                header("location: ../index.php");
             }
         }else{
             // echo mysqli_num_rows($result);
-            header("location: ../views/index.php");
+            header("location: ../index.php");
         }
     }
 }else{
-    header("location: ../views/index.php?nokey");
+    header("location: ../index.php?nokey");
 }
 

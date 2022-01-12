@@ -1,10 +1,10 @@
-<?php include '../defaults/header.php';?>
-<link rel="stylesheet" href="~/styles/index.css">
+<?php include '.defaults/header.php';?>
+<link rel="stylesheet" href="./styles/index.css">
 <title>Home</title>
 
 <body>
     <?php 
-        include '../defaults/navbar.php';
+        include './defaults/navbar.php';
     ?>
 
     <div class="offset">
@@ -52,10 +52,10 @@
             </div>
 
             <?php 
-                include '../defaults/footer.php';
+                include './defaults/footer.php';
             ?>
         </div>
     </div>
 </body>
-<script src="../scripts/index.js"></script>
+<script src="./scripts/index.js"></script>
 </html>

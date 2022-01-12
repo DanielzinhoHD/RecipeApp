@@ -1,15 +1,15 @@
 <?php 
-    include '../defaults/header.php';
+    include './defaults/header.php';
 ?>
-<link rel="stylesheet" href="../styles/successful.css">
+<link rel="stylesheet" href="./styles/successful.css">
 <title>Account verified!</title>
 
 <body>
     <?php 
-        include '../defaults/navbar.php';
+        include './defaults/navbar.php';
         
         if(isset($_SESSION['id'])){
-            header('location: ../views/index.php');
+            header('location: ./views/index.php');
         };
     ?>
     
@@ -26,7 +26,7 @@
             </div>
 
             <?php 
-                include '../defaults/footer.php';
+                include './defaults/footer.php';
             ?>
 
         </div>

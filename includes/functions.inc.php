@@ -83,7 +83,7 @@ function existingEmail($conn, $email){
     $sql = "SELECT * FROM accounts WHERE email = ?;";
     $stmt = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt, $sql)){
-        header("location: ../views/loginSignUp.php?error=stmtfailedemail");
+        // header("location: ../loginSignUp.php?error=stmtfailedemail");
         exit();
     }else{
         mysqli_stmt_bind_param($stmt, "s", $email);
@@ -105,7 +105,7 @@ function createUser($conn, $name, $email, $password, $vkey){
     $sql = "INSERT INTO accounts (name, email, password, vkey) VALUES (?, ?, ?, ?);";
     $stmt = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt, $sql)){
-        header("location: ../views/loginSignUp.php?error=stmtfailedsignup");
+        // header("location: ../loginSignUp.php?error=stmtfailedsignup");
         exit();
     }else{
 
@@ -155,6 +155,4 @@ function alreadyAdded($conn, $userID, $recipeID){
         }
     }
     mysqli_stmt_close($stmt);
-
-    // fazer se ja existir o fav apagar; e se não, add
 }

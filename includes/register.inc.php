@@ -41,7 +41,7 @@ if(isset($_POST["submit"])){
         $to = $email;
         $subject = "Random Recipes - Email Verification";
         $message = "<p>Click the link below to verify your email:</p>
-        <a href='http://localhost/Websites/RecipeApp/includes/verify.inc.php?vkey=$vkey'>
+        <a href='https://recipeapp-exercise.herokuapp.com/includes/verify.inc.php?vkey=$vkey'>
             Register account
         </a>";
         $headers = "From: recipeappexercise@gmail.com" . "\r\n";

@@ -3,15 +3,15 @@
     include '../includes/functions.inc.php';
     include '../includes/dbh.inc.php';
 ?>
-<link rel="stylesheet" href="../styles/favs.css">
-<link rel="stylesheet" href="../styles/items.css">
+<link rel="stylesheet" href="./styles/favs.css">
+<link rel="stylesheet" href="./styles/items.css">
 
 <body>
     <?php 
-        include '../defaults/navbar.php';
+        include './defaults/navbar.php';
 
         if(!isset($_SESSION['id'])){
-            header('location: ../views/loginSignUp.php');
+            header('location: ./loginSignUp.php');
         }else{
             echo "<title>Favorites List - " . $_SESSION['name'] . "</title>";
         };
@@ -20,7 +20,7 @@
         <div id="body">
             
             <div id="section">
-                <?php include '../defaults/bg.php'?>
+                <?php include './defaults/bg.php'?>
 
                 <div class="container">
                     <h1>Favorites List</h1>
@@ -39,11 +39,11 @@
             </div>
 
             <?php 
-                include '../defaults/footer.php';
+                include '.defaults/footer.php';
             ?>
 
         </div>
     </div>
 </body>
-<script src="../scripts/filter-favs.js"></script>
+<script src=".scripts/filter-favs.js"></script>
 </html>

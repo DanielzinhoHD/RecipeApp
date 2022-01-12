@@ -1,17 +1,17 @@
 <?php
-    include '../defaults/header.php';
-    include '../includes/food-info.inc.php';
-    include '../includes/functions.inc.php';
-    include '../includes/dbh.inc.php';
+    include './defaults/header.php';
+    include './includes/food-info.inc.php';
+    include './includes/functions.inc.php';
+    include './includes/dbh.inc.php';
 
     echo '<title>Recipe - '. getFoodName($meal).'</title>';
 
 ?>
-<link rel="stylesheet" href="../styles/recipe.css">
+<link rel="stylesheet" href="./styles/recipe.css">
 
 <body>
     <?php 
-        include '../defaults/navbar.php';
+        include './defaults/navbar.php';
     ?>
     <div class="offset">
         <div id="body">
@@ -40,7 +40,7 @@
                                 }
                             }
                         }else{
-                            header("location: ../views/index.php");
+                            header("location: ./views/index.php");
                         }                    
                     ?>
                 </form>
@@ -69,11 +69,11 @@
                 </div>
             </div>
             <?php 
-                include '../defaults/footer.php';
+                include './defaults/footer.php';
             ?>
 
         </div>
     </div>
 </body>
-<script src="../scripts/recipe.js"></script>
+<script src="./scripts/recipe.js"></script>
 </html>
