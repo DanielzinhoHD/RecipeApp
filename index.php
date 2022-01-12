@@ -1,4 +1,4 @@
-<?php include '.defaults/header.php';?>
+<?php include './defaults/header.php';?>
 <link rel="stylesheet" href="./styles/index.css">
 <title>Home</title>
 
