@@ -6,4 +6,4 @@ $meal = $obj->meals[0];
 
 $mealID = $meal->idMeal;
 
-header("location: ../recipe.php?mealID=" . $mealID);
+header("location: ../views/recipe.php?mealID=" . $mealID);

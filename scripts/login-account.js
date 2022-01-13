@@ -12,7 +12,7 @@ $(".form-login").submit((event) => {
     }).done((error) => {
         if(!error){
             // mudar cursor pra loading;
-            location.href = "./index.php";
+            location.href = "../index.php";
         }
         console.log(error);
         const span = $("#error-msg-login");

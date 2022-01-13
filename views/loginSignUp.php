@@ -1,16 +1,16 @@
 <?php 
     if(isset($_SESSION['id'])){
-        header('location: ./index.php');
+        header('location: ../index.php');
     };
 
-    include './defaults/header.php';
+    include '../defaults/header.php';
 ?>
-<link rel="stylesheet" href="./styles/login-signup.css">
+<link rel="stylesheet" href="../styles/login-signup.css">
 <title>Joining RecipeApp</title>
 
 <body>
     <?php 
-        include './defaults/navbar.php';
+        include '../defaults/navbar.php';
     ?>
     
     <div class="offset">
@@ -77,13 +77,13 @@
             </div>
 
             <?php 
-                include './defaults/footer.php';
+                include '../defaults/footer.php';
             ?>
 
         </div>
     </div>
 </body>
-<script src="./scripts/login-signup.js"></script>
-<script src="./scripts/create-account.js"></script>
-<script src="./scripts/login-account.js"></script>
+<script src="../scripts/login-signup.js"></script>
+<script src="../scripts/create-account.js"></script>
+<script src="../scripts/login-account.js"></script>
 </html>

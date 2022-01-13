@@ -17,7 +17,7 @@ $(".form-signup").submit((event) => {
         submit: submit
     }).done((error) => {
         if(!error){
-            location.href = "../signup-successful.php";
+            location.href = "../views/signup-successful.php";
         }
         // console.log(error);
         const span = $("#error-msg-signup");

@@ -16,7 +16,7 @@
                     <div class="first-text">
                         Create your own <span class="red">account</span> now and add recipes into your <span class="purple">favorites</span>!
                     </div>
-                    <button type="button" class="first-btn" onclick="location.href='/loginSignUp.php?signup'">Enter</button>
+                    <button type="button" class="first-btn" onclick="location.href='./loginSignUp.php?signup'">Enter</button>
                     
                 </div>
                 <a class="first-arrow" href="#second-img"><i class="fas fa-chevron-down"></i></a>
@@ -31,7 +31,7 @@
                         <span class="green">Random</span> food and <span class="pink">how to do</span> them!
                     </div>
                     <form action="">
-                        <button type="button" class="second-btn" onclick="location.href='../includes/random-food.inc.php'">I wanna see one!</button>
+                        <button type="button" class="second-btn" onclick="location.href='./includes/random-food.inc.php'">I wanna see one!</button>
                     </form>
                 </div>
                 <a class="second-arrow" href="#third-img"><i class="fas fa-chevron-down"></i></a>

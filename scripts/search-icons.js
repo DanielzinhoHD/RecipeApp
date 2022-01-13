@@ -106,7 +106,7 @@ function displayIcons(data, titleText, id){
                     })
                 }
 
-                const a = $("<a>", {href: `./recipe.php?mealID=${recipe.idMeal}`});
+                const a = $("<a>", {href: `../views/recipe.php?mealID=${recipe.idMeal}`});
                 const p = $("<p>");
                 
                 p.html(recipe.strMeal);

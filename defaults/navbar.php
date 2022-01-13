@@ -31,17 +31,17 @@
             echo '<li>
                     <a>' . $_SESSION['name'] . '</a>
                     <div class="dropdown">
-                        <a href="../favlist.php">Favorites List</a>
+                        <a href="../views/favlist.php">Favorites List</a>
                         
                         <a href="../includes/logout.inc.php">Logout</a>
                     </div>
                 </li>';
         }else{
             echo '<li>
-                    <a href="../loginSignUp.php">Login</a>
+                    <a href="../views/loginSignUp.php">Login</a>
                 </li>';
             echo '<li>
-                    <a href="../loginSignUp.php?signup">Sign Up</a>
+                    <a href="../views/loginSignUp.php?signup">Sign Up</a>
                 </li>';
         }
     ?>
