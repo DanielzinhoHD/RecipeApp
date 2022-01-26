@@ -5,7 +5,7 @@ require "../vendor/autoload.php";
 class SendEmail{
 
     public static function sendMail($to, $subject, $content){
-        $key = parse_url(getenv("SENDGRID_API_KEY"));
+        $key = getenv("SENDGRID_API_KEY");
 
         $email = new \SendGrid\Mail\Mail();
         $email->setFrom("randomrecipes@gmail.com", "Random Recipes");
