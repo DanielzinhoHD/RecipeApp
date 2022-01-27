@@ -8,7 +8,7 @@ class SendEmail{
         $key = getenv("SENDGRID_API_KEY");
 
         $email = new \SendGrid\Mail\Mail();
-        $email->setFrom("randomrecipes@gmail.com", "Random Recipes");
+        $email->setFrom("recipeappexercise@gmail.com", "Random Recipes");
         $email->setSubject($subject);
         $email->addTo($to);
         $email->addContent("text/html", $content);
