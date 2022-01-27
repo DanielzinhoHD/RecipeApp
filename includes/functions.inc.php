@@ -116,6 +116,7 @@ function createUser($conn, $name, $email, $password, $vkey){
         mysqli_stmt_close($stmt);
         // header("location: ../views/loginSignUp.php?error=none");
         // exit();
+        return true;
     }
 }
 
