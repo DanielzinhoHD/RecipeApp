@@ -17,9 +17,9 @@ class SendEmail{
         
         try{
             $response = $sendGrid->send($email);
-            print $response->statusCode() . "\n";
-            print_r($response->headers());
-            print $response->body() . "\n";
+            // print $response->statusCode() . "\n";
+            // print_r($response->headers());
+            // print $response->body() . "\n";
             return $response;
         }catch(Exception $e){
             echo 'Caught email exception: '.$e->getMessage()."\n";
