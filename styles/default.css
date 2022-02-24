@@ -407,7 +407,7 @@ footer ul li a{
 
         color: rgb(209, 209, 209);
     }
-    .contact-icons{
+    #contact-icons{
         display: block;
 
         font-size: 1.6rem;
