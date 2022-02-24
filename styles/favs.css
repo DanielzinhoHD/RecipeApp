@@ -71,3 +71,23 @@
 
     color: palevioletred;
 }
+
+@media(max-width: 600px){
+    .container form input{
+        font-size: 1.3rem;
+
+        width: 50%;
+    }
+    .fav-btn{
+        font-size: 1.5rem !important;
+    }
+    .item{
+        margin-bottom: 20px !important;
+    }
+    .item img{
+        width: 90px !important;
+    }
+    .item p{
+        font-size: 1rem !important;
+    }
+}

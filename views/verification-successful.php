@@ -26,7 +26,7 @@
             </div>
 
             <?php 
-                include './defaults/footer.php';
+                include '../defaults/footer.php';
             ?>
 
         </div>
