@@ -1,6 +1,6 @@
 <?php include './defaults/header.php';?>
-<!-- <!-- <link rel="stylesheet" href="./styles/index.css"> -->
-<link rel="stylesheet" href="./styles/default.css">
+<link rel="stylesheet" href="./styles/index.css">
+<!-- <link rel="stylesheet" href="./styles/default.css"> -->
 <link rel="icon" href="./imgs/icon.png"> -->
 <title>Home</title>
 
