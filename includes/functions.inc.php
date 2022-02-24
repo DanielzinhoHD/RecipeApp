@@ -33,7 +33,7 @@ function loginUser($conn, $email, $password){
 
     if($userEmail === false){
         // header("location: ../views/loginSignUp.php?error=emaildoesntexist");
-        echo '<p>Email doesn\'t exist!</p>';
+        echo '<p class="error">Email doesn\'t exist!</p>';
         exit();
     }
 
@@ -46,7 +46,7 @@ function loginUser($conn, $email, $password){
 
         if($checkedPwd === false){
             // header("location: ../views/loginSignUp.php?error=wrongpwd");
-            echo '<p>Wrong password!</p>';
+            echo '<p class="error">Wrong password!</p>';
             exit();
         }else if($checkedPwd === true){
             session_start();

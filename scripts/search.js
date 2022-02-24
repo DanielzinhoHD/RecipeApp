@@ -1,3 +1,4 @@
+// Navbar's search form;
 const search = document.querySelector("#nav-search");
 
 const body = document.querySelector("#body");
@@ -23,10 +24,16 @@ search.addEventListener("click", () => {
     const input = document.querySelector(".searchbar form input");
     input.focus();
     // console.log(input.autofocus);
-})
+});
 
+// Click to copy email;
 const copyEmail = document.querySelector("#copy-email");
 
 copyEmail.addEventListener("click", () => {
     navigator.clipboard.writeText("christiandanielgomes@gmail.com");
+})
+
+// Navbar's sandwich btn;
+$('.bars').on('click', () => {
+    $('nav').toggleClass('responsive');
 })

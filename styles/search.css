@@ -122,3 +122,18 @@
 
     overflow-y: hidden;
 }
+
+@media(max-width: 600px){
+    .title{
+        font-size: 1.5rem;
+    }
+    .fav-btn{
+        font-size: 1.5rem;
+    }
+    .item a img{
+        width: 90px;
+    }
+    .item p{
+        font-size: 1rem;
+    }
+}

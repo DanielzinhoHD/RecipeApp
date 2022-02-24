@@ -1,5 +1,7 @@
 <?php include './defaults/header.php';?>
-<link rel="stylesheet" href="./styles/index.css">
+<!-- <link rel="stylesheet" href="./styles/index.css">
+<link rel="stylesheet" href="./styles/default.css">
+<link rel="icon" href="./imgs/icon.png"> -->
 <title>Home</title>
 
 <body>
@@ -43,10 +45,10 @@
                 <div id="third-img"></div>
                 <div class="third-block">
                     <div class="third-text">
-                        <span class="blue">Search</span> for recipes through their main <span class="red">ingredients</span>!
+                        <span class="blue">Search</span> for recipes by their <span class="red">names</span>!
                     </div>
                     <form action="">
-                        <button type="button" class="third-btn">Find out</button>
+                        <button type="button" class="third-btn">Search</button>
                     </form>
                 </div>
             </div>
