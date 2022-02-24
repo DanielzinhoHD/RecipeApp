@@ -40,3 +40,9 @@ h1 a{
 
     color: rgb(175, 53, 0);
 }
+
+@media(max-width: 600px){
+    h1{
+        width: 90%;
+    }
+}

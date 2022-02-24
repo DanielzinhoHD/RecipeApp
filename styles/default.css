@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap');
 
 body{
     overflow: overlay;
@@ -9,7 +10,7 @@ b{
 }
 
 :root{
-    --dark-orange--: rgba(156, 47, 0);
+    --dark-orange--: rgb(156, 47, 0);
     --red--: rgb(192, 97, 97);
     --purple--: rgb(177, 106, 177);
     --green--: rgb(55, 120, 55);
@@ -51,6 +52,8 @@ body{
     margin: 0;
 }
 
+/* Navbar's config */
+
 header{
     position: fixed;
 
@@ -64,10 +67,31 @@ header{
     /* align-items: center; */
     /* justify-content: space-around; */
 
-    font-size: 3.2vh;
+    font-size: 1.2rem;
     font-weight: bolder;
 
     z-index: 5;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+
+    height: 70px;
+    padding: 0px 20px;
+}
+
+input[type='checkbox']{
+    display: none;
+}
+
+.menu-icon{
+    font-size: 3.2rem;
+}
+
+.menu-icon a{
+    text-decoration: none;
+    color: white;
 }
 
 header ul{
@@ -81,39 +105,48 @@ header ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-    width: 100%;
 }
 
 header ul li{
     position: relative;
 
     height: 100%;
+    margin: 0px 20px;
 
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
     align-items: center;
+
+    transition: 0.1s ease;
 }
 
 header ul li a{
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    height: 100%;
 
     text-decoration: none;
-    color: #fcd5d5;
+    color: white;
+
     z-index: 2;
 }
 
-header ul li a:hover{
+label{
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header ul li a:hover,
+header ul li label:hover{
+    cursor: pointer;
     color: #cfb0b0;
 }
 
-header ul li:first-child{
-    margin-right: 30vw;
-    font-size: 3.2rem;
-}
-
-header ul li:hover .dropdown{
+header ul li input[type='checkbox']:checked ~ .dropdown{
     visibility: visible;
 }
 
@@ -144,8 +177,6 @@ header ul li:hover .dropdown{
     font-size: 2.8vh;
 
     z-index: 1;
-
-    transition: 0.2s ease;
 }
 
 .dropdown:hover{
@@ -155,7 +186,15 @@ header ul li:hover .dropdown{
 
 .dropdown a{
     cursor: pointer;
+    padding: 5px 0px;
 }
+
+.bars{
+    display: none;
+    z-index: 1;
+}
+
+/* End of navbar's config */
 
 .offset{
     margin-top: 0;
@@ -304,4 +343,73 @@ footer ul li a{
 
 ::-webkit-scrollbar-thumb:hover{
     background: rgb(100, 28, 0);
+}
+
+.responsive{
+    position: relative;
+}
+
+.responsive ul li .dropdown .contact-icons{
+    display: block;
+    font-size: 1.6rem;
+}
+
+@media(min-width: 601px){
+    header nav ul li:hover .dropdown{
+        visibility: visible;
+    }
+}
+
+@media(max-width: 600px){
+    .bars{
+        display: flex;
+        align-items: center;
+        padding: 0px 20px;
+        font-size: 1.8rem;
+    }
+    header nav ul{
+        display: none;
+    }
+    .responsive ul{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        display: block;
+        width: 100%;
+    
+    }
+    .responsive ul li{
+        position: relative;
+        display: block;
+        top: 100%;
+    
+        margin: 0px;
+        border: 0px;
+        padding-left: 20px;
+    
+        background-color: rgb(187, 57, 2);
+    }
+    .responsive ul li label{
+        width: 100%;
+    }
+    .responsive ul li .dropdown{
+        left: 0;
+
+        width: 100%;
+        padding-left: 40px;
+        border-radius: 0px;
+
+        font-size: 1.2rem;
+        transition: none;
+    }
+    .responsive .dropdown a{
+        text-align: start;
+
+        color: rgb(209, 209, 209);
+    }
+    .contact-icons{
+        display: block;
+
+        font-size: 1.6rem;
+    }
 }

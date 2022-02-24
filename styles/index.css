@@ -55,17 +55,15 @@
     letter-spacing: 2px;
 
     color: white;
-    font-size: 2.5vw;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .first-btn{
     border: none;
+    padding: 20px 80px;
 
-    width: 20vw;
-    height: 12vh;
-
-    font-size: 2vw;
+    font-size: 1.7rem;
     color: white;
     background-color: var(--red--);
     transition: 0.3s;
@@ -85,6 +83,8 @@
     position: absolute; 
     bottom: 120px;
     right: 50%;
+
+    margin-right: -14px;
 
     font-size: 2rem;
     color: white;
@@ -128,17 +128,16 @@
     letter-spacing: 2px;
 
     color: white;
-    font-size: 2.5vw;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .second-btn{
     border: none;
 
-    width: 20vw;
-    height: 12vh;
+    padding: 20px 80px;
 
-    font-size: 2vw;
+    font-size: 1.7rem;
     color: white;
     background-color: rgb(55, 100, 55);
     transition: 0.3s;
@@ -183,10 +182,9 @@
 .third-btn{
     border: none;
 
-    width: 20vw;
-    height: 12vh;
+    padding: 20px 80px;
 
-    font-size: 2vw;
+    font-size: 1.7rem;
     color: white;
     background-color: var(--blue--);
     transition: 0.3s;
@@ -196,4 +194,24 @@
 
 .third-btn:hover{
     background-color: rgb(58, 58, 114);
+}
+
+@media(max-width: 860px){
+    .second-btn{
+        padding: 20px 70px;
+    }
+}
+
+@media(max-width: 800px){
+    .first-text, .second-text, .third-text{
+        font-size: 1.5rem;
+    }
+    .first-btn, .second-btn, .third-btn{
+        padding: 20px 40px;
+    }
+
+    .first-block, .second-block, .third-block{
+        margin: 0px auto;
+        width: 50%;
+    }
 }

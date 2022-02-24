@@ -35,3 +35,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Navbar's search form;
+const searchBtn = document.querySelector(".third-btn");
+
+const body = document.querySelector("#body");
+
+searchBtn.addEventListener("click", () => {
+    const searchDiv = document.createElement("div");
+    
+    const searchBar = `
+        <form action="../views/search.php" method="GET">
+            <input name="search" type="text" placeholder="Search">
+        </form>
+    `;
+    searchDiv.innerHTML = searchBar;
+    
+    searchDiv.addEventListener("focusout", () => {
+        searchDiv.remove();
+    });
+
+    searchDiv.className = "searchbar";
+
+    body.appendChild(searchDiv);
+
+    const input = document.querySelector(".searchbar form input");
+    input.focus();
+    // console.log(input.autofocus);
+});
