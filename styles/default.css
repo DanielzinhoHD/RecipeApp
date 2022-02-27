@@ -154,7 +154,7 @@ header ul li input[type='checkbox']:checked ~ .dropdown{
     display: flex;
     justify-content: space-evenly;
 
-    font-size: 3.8vh;
+    font-size: 1.5rem;
 }
 
 .dropdown{
@@ -174,7 +174,7 @@ header ul li input[type='checkbox']:checked ~ .dropdown{
     background-color: rgb(170, 43, 5);
     visibility: hidden;
 
-    font-size: 2.8vh;
+    font-size: 1.2rem;
 
     z-index: 1;
 }
